@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ html, body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background-color: #000;
+}
+
+.time-box {
+    height: 100px;
+    width: 360px;
+    cursor: default;
+    background: linear-gradient(95deg, #14ffe9, #ffeb3b, #ff00e0);
+    animation: animate 1.5s linear infinite;
+    border-radius: 10px;
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg)
+    }
+}
+
+.display {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -45%);
+    background: #000;
+    border-radius: 6px;
+    height: 85px;
+    width: 345px;
+} 
+
+.time {
+    line-height: 85px;
+    font-size: 50px;
+    font-weight: 600;
+    background: linear-gradient(130deg, #ff00e0, #ffeb3b, #14ffe9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2, button {
+    background: linear-gradient(130deg, #ff00e0, #ffeb3b, #14ffe9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 1.5s linear infinite;
+}
+
+button {
+    border: 3px solid #fff;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
